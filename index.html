@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>最終発表 用 レイアウト</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- 上段：プログラム名・開発者 -->
+    <header class="top-section">
+      <h1 class="program-title">（のスロットゲーム）</h1>
+      <p class="developer-name">開発者：（25S18,purami）</p>
+    </header>
+
+    <!-- 中段：左＝動作イメージ画像 / 右＝概要・アピールポイント -->
+    <main class="middle-section">
+
+      <!-- 左：動作イメージ画像（images/image.png を表示） -->
+      <section class="preview-area">
+        <h2 class="section-title">プログラム動作イメージ</h2>
+        <div class="preview-box">
+          <!-- 各自が images フォルダに image.png ファイルを保存 -->
+          <img
+            src="image/pic.png"
+            alt="プログラム動作イメージ"
+            class="preview-image"
+          />
+        </div>
+      </section>
+
+      <!-- 右：概要とアピールポイント -->
+      <section class="description-area">
+        <h2 class="section-title">プログラム概要とアピールポイント</h2>
+        <div class="description-box">
+          <h3>概要</h3>
+          <p>
+            （ボタンをひとつ押すだけで、キラキラしたリールがぐるぐる回るスロットゲームだよ！ 「あたり」が出るまでドキドキの3秒間！3つの絵柄がぴったり揃ったら、画面いっぱいに「おめでとう！」のメッセージが出て、コインがたくさんもらえるよ。 キミは100枚のコインをどこまで増やせるかな？「あたり」を目指して挑戦してみよう！）<br />
+          </p>
+
+          <h3>アピールポイント</h3>
+          <ul>
+            <li>（3秒間のドキドキ・アニメーション！）</li>
+            <li>（特別な「勝者画面」でヒーロー気分！）</li>
+            <li>（遊びながら「数」に強くなれる！）</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 下段：開発環境・プログラム起動ボタン -->
+    <footer class="bottom-section">
+
+      <div class="info-row">
+        <span class="info-label">開発環境：</span>
+        <span class="info-value">
+          GitHub（HTML / CSS / JavaScript）
+        </span>
+      </div>
+
+      <div class="info-row">
+        <label class="info-label" for="program-path">
+          index.html の場所：
+        </label>
+        <input
+          id="program-path"
+          class="path-input"
+          type="text"
+          placeholder="file:///C:/Users/user/Documents/mygame/index.html"
+        />
+        <button id="launch-btn" class="launch-button">
+          プログラム起動
+        </button>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
